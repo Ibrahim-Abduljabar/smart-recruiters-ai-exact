@@ -269,25 +269,6 @@
     </style>
 </head>
 <body>
-    <div class="lang-switch">
-    <button onclick="setLang('ar')">العربية</button>
-    <button onclick="setLang('en')">English</button>
-    </div>
-
-    <script>
-    function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    const url = new URL(window.location.href);
-    url.searchParams.set("lang", lang);
-    window.location.href = url.toString();
-    }
-    </script>
-
-    <script>
-    const lang = localStorage.getItem("lang") || "ar";
-    document.getElementById("run-app").href =
-    https://YOUR-STREAMLIT-APP.streamlit.app/?lang=${lang};
-    </script>
     <div class="page">
         <div class="card">
             <div class="glow"></div>
