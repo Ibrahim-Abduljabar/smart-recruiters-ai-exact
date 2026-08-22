@@ -1,15 +1,4 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Link",
-          "value": "</lang.js>; rel=preload; as=script"
-        }
-      ]
-    }
-  ]
+  "cleanUrls": true
 }
